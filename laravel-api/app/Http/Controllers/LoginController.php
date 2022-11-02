@@ -8,16 +8,20 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
+<<<<<<< HEAD
     /**
      * Display login page.
      *
      * @return Renderable
      */
+=======
+>>>>>>> 0e558089f461e26f39ec9b083483199154e61b02
     public function show()
     {
         return view('loginPage');
     }
 
+<<<<<<< HEAD
     /**
      * Handle account login request
      *
@@ -25,6 +29,8 @@ class LoginController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+=======
+>>>>>>> 0e558089f461e26f39ec9b083483199154e61b02
     public function login(LoginRequest $request)
     {
         $credentials = $request->getCredentials();
@@ -40,14 +46,6 @@ class LoginController extends Controller
         return $this->authenticated($request, $user);
     }
 
-    /**
-     * Handle response after user authenticated
-     *
-     * @param Request $request
-     * @param Auth $user
-     *
-     * @return \Illuminate\Http\Response
-     */
     protected function authenticated(Request $request, $user)
     {
         return redirect()->intended();
