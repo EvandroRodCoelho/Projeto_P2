@@ -27,10 +27,10 @@ Route::middleware([
     })->name('dashboard');
 
     Route::get('/order', function () {
-        return view('dashboard');
+        return view('order');
     })->name('order');
 
     Route::post('/order', function () {
-        return view('dashboard');
+        return view('order');
     })->name('order');
 });

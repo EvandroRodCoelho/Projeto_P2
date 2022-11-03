@@ -34,7 +34,7 @@
 
             <div class="flex items-center  justify-between mt-4">
                 
-                    <a class="underline  text-gray-600 hover:text-gray-900" href="./register">
+                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="./register">
                         {{ __('Ainda sem registro?') }}
                     </a>
 
